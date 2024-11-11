@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hades Rift</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <span class="site-title">Hades Rift</span>
+        <nav>
+            <a href="https://your-bio-link.com" target="_blank">Bio</a>
+            <a href="#" onclick="showAdminLogin()">Admin</a>
+        </nav>
+    </header>
+
+    <!-- Metallic Background -->
+    <div class="background"></div>
+
+    <!-- Main Content -->
+    <main id="content">
+        <h1>Welcome to Hades Rift</h1>
+        <p>Experience the best in gaming.</p>
+    </main>
+
+    <!-- Admin Login Modal -->
+    <div id="admin-login" class="modal hidden">
+        <div class="modal-content">
+            <h3>Admin Login</h3>
+            <input type="password" id="admin-password" placeholder="Enter Password">
+            <button onclick="verifyPassword()">Login</button>
+        </div>
+    </div>
+
+    <!-- Admin Control Panel -->
+    <div id="admin-panel" class="hidden">
+        <h2>Control Panel</h2>
+        <textarea id="admin-text" placeholder="Add some content..."></textarea>
+        <button onclick="addContent()">Add Content</button>
+        <div id="dynamic-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
